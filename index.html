@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/reponsive700px.css">
+  <link rel="stylesheet" href="./assets/css/ham-menu.css">
+  <link rel="shortcut icon" href="./assets/img/Coding logo.blond.png" type="image/png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <title>Accueil</title>
+</head>
+
+<body>
+  <header> <!--START HEADER (NAV)-->
+    <div class="main">
+      <img class="logo" src="./assets/img/jsLogo.png" alt="logo">
+      <a href="./index.html">
+        <h1>JavaScript</h1>
+      </a>
+    </div>
+    <nav>
+      <div id="menuToggle">
+
+        <input type="checkbox" />
+
+        <span></span>
+        <span></span>
+        <span></span>
+
+        <ul id="menu">
+          <li><a href="./index.html">Accueil</a></li>
+          <li><a href="./page/javascript.html">JavaScript</a></li>
+          <li> <a href="./page/node.html">Node.js</a></li>
+          <li> <a href="./page/contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header><!--END HEADER-->
+
+  <main>
+    <div class="text_top"> <!--START TEXT-->
+      <section class="title">
+        <h2>Introduction a Javascript et Node.js :</h2>
+        <p>(Pour les nuls)</p>
+      </section>
+
+      <div class="button-lang"><!--BUTTON-->
+        <div class="java-button">
+          <input type="button" onclick="displayJs()" value="javascript">
+        </div>
+        <div class="node-button">
+          <input type="button" onclick="displayNode()" value="node.js">
+        </div>
+      </div>
+
+
+      <div class="txt_mid">
+        <article id="javascript">
+          <h3>Définition de JavaScript:</h3>
+          <p>
+            JavaScript (« JS » en abrégé) est un langage de programmation dynamique complet qui, appliqué à un document
+            HTML, peut fournir une interactivité dynamique sur les sites Web. Il a été inventé par Brendan Eich,
+            co-fondateur du projet Mozilla, de la Mozilla Foundation et de la Mozilla Corporation.
+          </p>
+          <p>JavaScript est d'une incroyable flexibilité. Vous pouvez commencer petit, avec des carrousels, des galeries
+            d'images, des variations de mises en page et des réponses aux clics de boutons. Avec plus d'expérience, vous
+            serez en mesure de créer des jeux, des graphiques 2D et 3D animés, des applications complètes fondées sur
+            des bases de données et bien plus encore !</p>
+          <div class="js-img">
+            <div><img
+                src="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/What_is_JavaScript/browser.png"
+                alt="img JavaScript"></div>
+            <div><img
+                src="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/What_is_JavaScript/execution.png"
+                alt="2eme image javascript"></div>
+          </div>
+          <article>
+            <div class="txt_down">
+              <h4>JavaScript est plutôt compact tout en étant très souple. Les développeurs ont écrit de
+                nombreux outils
+                sur
+                le cœur du langage JavaScript, créant des fonctionnalités supplémentaires très simplement. Parmi ces
+                outils,
+                il y a :</h4>
+            </div>
+            <ul class="list">
+              <li>des Interfaces de Programmation d'Applications pour navigateurs (API) — API intégrées aux navigateurs
+                web permettant de créer dynamiquement du HTML, de définir des styles de CSS, de collecter et manipuler
+                un
+                flux vidéo depuis la webcam de l'utilisateur ou de créer des graphiques 3D et des échantillonnages
+                audio.
+              </li>
+              <li>des API tierces-parties permettant aux développeurs d'incorporer dans leurs sites des fonctionnalités
+                issues d'autres fournisseurs de contenu, comme Twitter ou Facebook.</li>
+              <li>des modèles et bibliothèques tierces-parties applicables à votre HTML permettant de mettre en œuvre
+                rapidement des sites et des applications.</li>
+            </ul>
+          </article>
+        </article>
+        <article id="node">
+          <h3>Qu'est-ce que Node.js et pourquoi l'utiliser ?</h3>
+          <p>
+            JavaScript est l'un des langages de programmation les plus populaires au monde. Aujourd'hui, il propulse des
+            millions de sites web et il a attiré des masses de développeurs et de concepteurs pour créer des
+            fonctionnalités pour le web. Si vous êtes novice en programmation, JavaScript est facilement l'un des
+            meilleurs langages de programmation à maîtriser.
+
+            Au cours de ses 20 premières années, JavaScript a été utilisé principalement pour les scripts côté client.
+            Étant donné que JavaScript ne pouvait être utilisé qu'à l'intérieur de la balise
+            "script", les développeurs devaient travailler dans plusieurs langages et frameworks entre les composants
+            frontend et backend.Plus tard est apparu Node.js, qui est un environnement d'exécution comprenant tout ce
+            qui est nécessaire pour exécuter un programme écrit en JavaScript.
+          </p>
+          <div class="node-img">
+            <img
+              src="https://kinsta.com/fr/wp-content/uploads/sites/4/2021/04/what-is-node-js-featured-image-1024x512.jpeg"
+              alt="img JavaScript">
+          </div>
+          <ul class="list">
+            <li>js maintient un pool limité de threads pour servir les requêtes.</li>
+            <li>Chaque fois qu'une requête arrive, Node.js la place dans une file d'attente.</li>
+            <li>Maintenant, la « boucle d'événement » single-thread - le composant central - entre en jeu. Cette boucle
+              d'événement attend les requêtes indéfiniment.</li>
+            <li>Lorsqu'une requête arrive, la boucle la récupère dans la file d'attente et vérifie si elle nécessite une
+              opération d'entrée / sortie (E / S) bloquante. Si ce n'est pas le cas, elle traite la requête et envoie
+              une réponse.</li>
+            <li>Si la requête doit effectuer une opération de blocage, la boucle d'événements attribue un thread du pool
+              de threads internes pour traiter la requête. Le nombre de threads internes disponibles est limité. Ce
+              groupe de threads auxiliaires est appelé le groupe de worker.</li>
+            <li>La boucle d'événements suit les requêtes bloquantes et les place dans la file d'attente une fois que la
+              tâche bloquante est traitée. C'est ainsi qu'elle conserve sa nature non bloquante.</li>
+          </ul>
+        </article>
+      </div><!--END TEXT-->
+    </div>
+
+    <footer><!--START FOOTER-->
+      <div class="pictures"> <!--START OF PICTURES BLOC-->
+        <section class="imagemid">
+          <div><img src="./assets/img/htmllogo.png"></div>
+        </section>
+        <section class="imagemid">
+          <div><img class="big" src="./assets/img/phplogo.png"></div>
+        </section>
+        <section class="imagemid">
+          <div><img src="./assets/img/sqllogo.png"></div>
+        </section>
+        <section class="imagemid">
+          <div><img src="./assets/img/xmllogo.png"></div>
+        </section>
+
+        <div id="footerpage">
+          <article>
+            <h5 class="footer_img foot_txt"><img src="./assets/img/Coding logo.blond.png"></h5>
+          </article>
+        </div>
+        <div class="foot_txt">
+          <p>© Blond Mars.2023</p>
+        </div>
+      </div> <!--END OF PICTURES BLOC-->
+
+    </footer><!--END FOOTER-->
+  </main>
+  <script src="./assets/js/main.js"></script>
+</body>
+
+</html>

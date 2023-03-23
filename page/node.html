@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/reponsive700px.css">
+    <link rel="stylesheet" href="../assets/css/ham-menu.css">
+    <link rel="stylesheet" href="../assets/css/node.css">
+    <link rel="shortcut icon" href="../assets/img/Coding logo.blond.png" type="image/png">
+    <title>NodeBlond</title>
+</head>
+
+<body>
+    <header> <!--START HEADER OF PAGE (NAV)-->
+        <div class="main">
+            <img class="logo" src="../assets/img/jsLogo.png">
+            <a href="../index.html">
+                <h1>Node.JS</h1>
+            </a>
+        </div>
+        <nav role='navigation'>
+            <div id="menuToggle">
+
+                <input type="checkbox" />
+
+                <span></span>
+                <span></span>
+                <span></span>
+
+                <ul id="menu">
+                    <li><a href="../index.html">Accueil</a></li>
+                    <li><a href="./javascript.html">JavaScript</a></li>
+                    <li> <a href="./node.html">Node.js</a></li>
+                    <li> <a href="./contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="text_top"> <!--START TEXT-->
+            <section class="title">
+                <h2>Node.js :</h2>
+                <p>est écrit en C, C++ et JavaScript.</p>
+                <p>Wikipédia définit Node.js comme « une compilation packagée du moteur JavaScript V8 de Google, de la
+                    couche d'abstraction de la plateforme libuv et d'une bibliothèque centrale, qui est elle-même
+                    principalement écrite en JavaScript ».
+                </p>
+                <p>Le runtime utilise Chrome V8 en interne, qui est le moteur d'exécution JavaScript, et il est
+                    également écrit en C++. Cela ajoute des cas d'utilisation supplémentaires au répertoire de Node.js,
+                    comme l'accès aux fonctionnalités internes du système (comme la mise en réseau).
+                </p>
+            </section>
+            <section>
+                <h3>Architecture de Node.js et comment elle fonctionne :</h3>
+                <p>
+                    Node.js utilise l’architecture « Single Threaded Event Loop » pour gérer plusieurs clients en même
+                    temps. Pour comprendre en quoi cela est différent des autres runtimes, nous devons comprendre
+                    comment les clients concurrents multi-threads sont gérés dans des langages comme Java.
+
+                    Dans un modèle requête-réponse multi-thread, plusieurs clients envoient une requête, et le serveur
+                    traite chacune d’entre elles avant de renvoyer la réponse. Cependant, plusieurs threads sont
+                    utilisés pour traiter les appels simultanés. Ces threads sont définis dans un pool de threads, et
+                    chaque fois qu’une requête arrive, un thread individuel est affecté à son traitement.</p>
+            </section>
+        </div>
+        <footer><!--START FOOTER-->
+            <div class="pictures"> <!--START OF PICTURES BLOC-->
+                <section class="imagemid">
+                    <div><img src="../assets/img/htmllogo.png"></div>
+                </section>
+                <section class="imagemid">
+                    <div><img class="big" src="../assets/img/phplogo.png"></div>
+                </section>
+                <section class="imagemid">
+                    <div><img src="../assets/img/sqllogo.png"></div>
+                </section>
+                <section class="imagemid">
+                    <div><img src="../assets/img/xmllogo.png"></div>
+                </section>
+
+                <div id="footerpage">
+                    <article>
+                        <h5 class="footer_img foot_txt"><img src="../assets/img/Coding logo.blond.png"></h5>
+                    </article>
+                </div>
+                <div class="foot_txt">
+                    <p>© Blond Mars.2023</p>
+                </div>
+            </div> <!--END OF PICTURES BLOC-->
+        </footer><!--END FOOTER-->
+    </main>
+    </main>
+</body>

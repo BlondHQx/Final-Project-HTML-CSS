@@ -1,0 +1,214 @@
+@font-face {
+    font-family: Fira Code;
+    src: url("../font/FiraCode-Regular.ttf");
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    color: #000;
+
+}
+
+body {
+    margin: 0%;
+    font-family: Fira Code;
+    background-color: #8BC6EC;
+    background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);
+}
+
+
+header {
+    border-bottom: solid 2px;
+    border-color: #8BC6EC;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 800;
+}
+
+header .main {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+header div img {
+    width: 9%;
+    padding: 1vh;
+}
+
+header a {
+    text-decoration: none;
+    margin-top: 0.5vh;
+}
+
+/* Underline styles */
+header a {
+    display: block;
+    position: relative;
+    padding: 0.2em 0;
+    width: 43%;
+    height: 20px;
+}
+
+/* Fade in */
+header a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0.15em;
+    background-color: rgb(255, 0, 0);
+    opacity: 0;
+    transition: opacity 300ms, transform 500ms;
+}
+
+/* Slide in */
+header li a {
+    overflow: hidden;
+}
+
+header li a::after {
+    opacity: 1;
+    transform: translate3d(-100%, 0, 0);
+}
+
+header li a:hover::after,
+header li a:focus::after {
+    transform: translate3d(0, 0, 0);
+}
+
+/* Start main */
+.text_top {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.title h2 {
+    font-weight: 800;
+    font-size: 200%;
+    margin: auto;
+}
+
+.button-lang {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 20px;
+}
+
+.java-button input {
+    width: 90px;
+    color: #111927;
+    padding: 8px 15px 8px 15px;
+    border-radius: 5px;
+    background: #00eeff6e;
+    border: 5px;
+    box-shadow: 2px 2px 3px 1px #0d4a4d;
+    text-decoration: none;
+}
+
+.java-button:active {
+    transform: scale(0.98);
+    box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+}
+
+.node-button input {
+    width: 90px;
+    color: #111927;
+    padding: 8px 15px 8px 15px;
+    border-radius: 5px;
+    background: #00eeff6e;
+    border: 5px;
+    box-shadow: 2px 2px 3px 1px #0d4a4d;
+    text-decoration: none;
+}
+
+.node-button:active {
+    transform: scale(0.98);
+    box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+}
+
+
+main .txt_mid {
+    display: flex;
+    flex-direction: column;
+    padding: 0px, 55px, 55px, 55px;
+}
+
+main .txt_mid article {
+    padding: 15px;
+}
+
+main .txt_mid article h3 {
+    font-weight: 600;
+    margin-bottom: 2vh;
+    text-decoration: underline dashed black;
+}
+
+main .txt_mid article h4 {
+    margin: 40px;
+}
+
+main .txt_mid .js-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.node-img img {
+    padding: 5vh;
+}
+
+main .txt_mid article .list {
+    padding-left: 350px;
+    padding-right: 350px;
+}
+
+main .txt_mid article .list li {
+    margin-bottom: 20px;
+}
+
+#node {
+    display: none;
+}
+
+footer .pictures {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2%;
+    border-style: solid;
+    border-color: #8BC6EC;
+    border-width: 1px;
+    background-color: rgba(0, 183, 255, 0.644);
+}
+
+footer .pictures .imagemid {
+    margin: auto;
+}
+
+.pictures .imagemid img {
+    width: 50px;
+}
+
+footer {
+    border-top: solid 2px;
+    border-color: #00b3ff;
+}
+
+.footer_img img {
+    width: 50px;
+}
+
+.footerpage {
+    display: flex;
+}
+
+.foot_txt {
+    margin-top: 1vh;
+    font-size: smaller;
+}
+
