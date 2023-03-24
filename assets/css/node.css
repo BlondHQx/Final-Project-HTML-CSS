@@ -1,0 +1,29 @@
+.text_top p{
+    margin-bottom: 2vh;
+    text-align: center;
+    padding: 0vw 18vw 0vw;
+}
+
+.text_top h3{
+    margin-top: 1vh;
+    margin-bottom: 1.5vh;
+
+}
+.img_mid {
+    display: flex;
+    justify-content: space-around;
+}
+.text_top img { 
+    width:450px;
+    object-fit: contain;
+    mix-blend-mode: color-burn;
+}
+.liste {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+ol {
+    width: 50%;
+}
